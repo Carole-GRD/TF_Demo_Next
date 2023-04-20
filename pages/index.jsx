@@ -11,7 +11,16 @@ export default function Home() {
       <section>
         <h2>Liens de navigation</h2>
         {/* Pour naviguer entre les pages => Link */}
-        <Link href='/demo/about'>About (SGR - No Data)</Link>
+
+        <div>
+          <Link href='/demo/about'>About (SGR - No Data)</Link>
+        </div>
+        <div>
+          <Link href='/book'>Book List (SGR - No Data)</Link>
+        </div>
+
+        
+
       </section>
       
     </main>

@@ -42,3 +42,14 @@ h2 {
   mx-auto
   my-5
 }
+
+/* ATTENTION -> utiliser Tailwind !! */
+table th,
+table td {
+  border: 1px solid #b2b2b2;
+  padding: 0.2rem 1rem;
+}
+table td {
+  border: 1px solid #b2b2b2;
+  min-width: calc(20ch + 1rem);
+}
