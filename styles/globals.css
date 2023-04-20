@@ -2,26 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+h1 {
+  @apply
+  text-5xl 
+  mb-5
+  text-green-600
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h2 {
+  @apply
+  text-3xl 
+  mb-2
+  text-green-800
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn {
+  @apply
+  text-yellow-200
+  bg-green-800
+  pt-1 pb-1 pl-3 pr-3
+  rounded-md
+  hover:bg-green-600
+  hover:text-yellow-100
+  disabled:bg-gray-400
+  disabled:text-black
+  my-5
+}
+
+.img-1 {
+  @apply
+  flex
+  justify-center
+  my-5
+}
+
+.img-2 {
+  @apply
+  block
+  mx-auto
+  my-5
 }
